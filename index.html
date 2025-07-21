@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - input range + random bg color + nav with menu</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+
+    <!-- ================ navbar with menu from left START ================ -->
+    <section class="shadow">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-12">
+              <nav class="navbar">
+                <img src="logo.png" alt="">
+
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+  
+                <span><iconify-icon icon="iconamoon:search-thin" width="24" height="24"></iconify-icon></span>
+              </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ navbar with menu from left END ================ --> 
+
+    <!-- ================ updating range input value dynamically START ================ -->
+    <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <div class="input_range_div" >
+                  <!-- <label class="label"  for="rangeInput">Select a value:</label> -->
+                  <p>Select a value:</p>
+                  <br>
+                  <input class="range_input" type="range" min="0" max="100" value="50" />
+                  <br>
+                  <span class="current_value">50</span>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ================ updating range input value dynamically END ================ -->
+
+    <!-- ================ changing background color randomly START ================ -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="color_div" >
+                <button class="click_btn" >Change color!</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ changing background color randomly END ================ --> 
+    
+
+    <!-- custom js -->
+    <script src="app.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- iconify js -->
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+  </body>
+</html>
